@@ -22,6 +22,10 @@ class KategoriController extends Controller
             'nama_kategori' => 'required|string|max:255'
         ]);
 
+        return response()->json([
+            'message' => 'Kategori berhasil ditambahkan!',
+        ], 201);
+
         $kategori = Kategori::create([
             'nama_kategori' => $request->nama_kategori
         ]);

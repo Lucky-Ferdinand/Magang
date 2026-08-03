@@ -12,9 +12,7 @@ class Kategori extends Model
     // 2. Tambahkan HasUuids di baris ini
     use HasFactory, SoftDeletes, HasUuids;
 
-    protected $fillable = [
-        'nama_kategori',
-    ];
+    protected $fillable = ['id'];
 
     public function buku()
     {

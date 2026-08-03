@@ -13,9 +13,7 @@ class Book extends Model
     use HasFactory, SoftDeletes, HasUuids;
 
     protected $fillable = [
-        'judul',
         'kategori_id',
-        'harga',
         'jumlah_produk',
     ];
 
