@@ -13,9 +13,6 @@ class BookController extends Controller
     {
         // with('kategori') adalah "pointing" relasi ke tabel kategori
         $books = Book::with('kategori')->latest()->get();
-        return reponse()->json([
-            'message' => 'Berhasil menampilkan semua buku beserta relasi kategorinya',
-        ]);
         return response()->json($books);
     }
 

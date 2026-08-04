@@ -9,11 +9,13 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Book extends Model
 {
-    // 2. Tambahkan HasUuids di baris ini
     use HasFactory, SoftDeletes, HasUuids;
 
     protected $fillable = [
+        'judul',
         'kategori_id',
+        'jumlah_produk',
+        'harga',
         'jumlah_produk',
     ];
 

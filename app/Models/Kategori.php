@@ -9,10 +9,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Kategori extends Model
 {
-    // 2. Tambahkan HasUuids di baris ini
     use HasFactory, SoftDeletes, HasUuids;
 
-    protected $fillable = ['id'];
+    protected $fillable = ['nama_kategori'];
 
     public function buku()
     {
